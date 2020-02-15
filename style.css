@@ -1,7 +1,5 @@
-.intro-2 {
-  background: url("img/burger-background.jpeg")no-repeat center center;
-  background-size: cover;
-  z-index: 0;
+
+.another-section {
   height: 100vh;
 }
 
@@ -46,11 +44,6 @@
   .navbar {
     line-height: 1;
   }
-}
-
-html,
-body {
-  height: 100%;
 }
 
 nav img {
