@@ -1,8 +1,13 @@
-
 .intro-2 {
   background: url("img/burger-background.jpeg")no-repeat center center;
   background-size: cover;
   z-index: 0;
+  height: 100vh;
+}
+
+.vertical-center {
+  display: table-cell!important;
+  vertical-align: middle!important;
 }
 
 .navbar {
@@ -44,8 +49,7 @@
 }
 
 html,
-body
-.view {
+body {
   height: 100%;
 }
 
