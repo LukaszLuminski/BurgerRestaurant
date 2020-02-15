@@ -11,10 +11,6 @@ $('.second-button').on('click', function () {
   objectFitImages();
 
   jarallax(document.querySelectorAll('.jarallax'), {
-  disableParallax: function () {
-    return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
-  },
-  disableVideo: function () {
-    return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
-  }
-});
+    disableParallax: /iPad|iPhone|iPod|Android/,
+    disableVideo: /iPad|iPhone|iPod|Android/
+  });
