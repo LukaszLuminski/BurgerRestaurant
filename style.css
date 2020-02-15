@@ -1,3 +1,6 @@
+body {
+  color: white;
+}
 
 .another-div {
   height: 100vh;
@@ -39,6 +42,15 @@
 .cta {
   z-index: 10;
   margin-top: 160px !important;
+  max-width: 900px;
+}
+
+.recipes {
+  height: 500px;
+}
+
+.jarallax {
+  min-height: 500px;
 }
 
 @media only screen and (max-width: 991px) {
