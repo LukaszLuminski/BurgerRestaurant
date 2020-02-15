@@ -1,5 +1,5 @@
 
-.another-section {
+.another-div {
   height: 100vh;
 }
 
@@ -11,6 +11,7 @@
 .navbar {
   background-color: transparent;
   box-shadow: none;
+  min-height: 76px;
 }
 
 .top-nav-collapse {
