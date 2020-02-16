@@ -1,5 +1,6 @@
 body {
   color: white;
+  background-color: #f9f2eb;
 }
 
 .another-div {
@@ -18,7 +19,7 @@ body {
 }
 
 .top-nav-collapse {
-  background: linear-gradient(to right, #edd7c4, #7b6351);
+  background: #f3e5d8;
   box-shadow: 1px 4px 15px 5px rgba(0, 0, 0, 0.35);
 }
 

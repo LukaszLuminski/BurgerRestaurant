@@ -8,9 +8,9 @@ $('.second-button').on('click', function () {
   });
 
   // object-fit polyfill run
-  objectFitImages();
+  // objectFitImages();
 
-  jarallax(document.querySelectorAll('.jarallax'), {
-    disableParallax: /iPad|iPhone|iPod|Android/,
-    disableVideo: /iPad|iPhone|iPod|Android/
-  });
+  // MDB Lightbox Init
+$(function () {
+$("#mdb-lightbox-ui").load("mdb/mdb-addons/mdb-lightbox-ui.html");
+});
