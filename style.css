@@ -27,7 +27,6 @@ body {
 /* .navbar .dropdown-menu, .top-nav-collapse .dropdown-menu {
   line-height: normal;
 } */
-
 .navbar .dropdown-menu {
   color: white;
   background: transparent;
@@ -257,7 +256,7 @@ nav img {
   }
 
   .first {
-    margin-top: 10px;
+    margin-top: 22px !important;
   }
 
   .last {
