@@ -778,6 +778,10 @@ nav img {
   }
 }
 
+.contact .my-5 {
+  margin-bottom: 35px !important;
+}
+
 .grid-text {
   margin-top: 3%;
 }
@@ -889,5 +893,21 @@ nav img {
 
   .carousel-control-next {
     left: 81%;
+  }
+}
+
+@media (min-width: 768px) {
+  .jarallax-img {
+    background-image: url('img/burger-background.jpeg');
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .jarallax-img {
+    background-image: url('img/burger-background2.jpg');
+    background-size: cover;
+    background-position: center;
   }
 }
