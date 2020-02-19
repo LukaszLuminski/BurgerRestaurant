@@ -1,6 +1,6 @@
 wW = $(window).width();
 
-$(".scroll-down, .right a").on('click', function(event) {
+$(".nav-link, .main a").on('click', function(event) {
   event.preventDefault();
   var full_url = this.href;
   var parts = full_url.split("#");
