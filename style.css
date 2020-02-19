@@ -898,6 +898,7 @@ nav img {
 
 @media (min-width: 768px) {
   .jarallax-img {
+    width: 100vh;
     background-image: url('img/burger-background.jpeg');
     background-size: cover;
     background-position: center;
@@ -906,6 +907,7 @@ nav img {
 
 @media (max-width: 767px) {
   .jarallax-img {
+    width: 100vh;
     background-image: url('img/burger-background2.jpg');
     background-size: cover;
     background-position: center;
