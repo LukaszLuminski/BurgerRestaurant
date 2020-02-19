@@ -1,16 +1,30 @@
 body {
   color: white;
   background-color: #f2e3d9;
-  font-family: sans-serif !important;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: sans-serif !important; */
 }
 
-h1, h2 {
+a, a:active, a:hover, a:focus {
+  color: inherit!important;
+}
+
+h1, h2, h3 {
   font-family: 'Playball', cursive;
   color: #b9702c;
 }
 
 h1 {
   font-size: 6.5rem;
+}
+
+h2 {
+  font-size: 6rem;
+}
+
+h3 {
+  color: white;
+  font-size: 4.5rem;
 }
 
 .yummy {
@@ -24,7 +38,7 @@ h1 {
   content: '';
   position: absolute;
   width: 180px;
-  height: 2px;
+  height: 1px;
   background: white;
   bottom: 0;
   top: 65px;
@@ -121,13 +135,45 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
     border-color:white !important;
 }
 
-.recipes {
-  height: 500px;
+.who-we-are {
+  color: black !important;
+  max-width: 600px;
 }
 
-.jarallax {
-  height: 50vh;
-  min-height: 50vh;
+.who-we-are-h {
+  margin-bottom: 40px;
+  position: relative;
+  margin-top: -22px;
+}
+
+.who-we-are-h:after {
+  content: '';
+  position: absolute;
+  background: rgba(0,0,0,.9);;
+  width: 100px;
+  height: 1px;
+  bottom: 0;
+  top: 68px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.who-we-are p {
+  /* margin-top: 12px; */
+  margin-bottom: 12px;
+}
+
+.who-we-are a {
+  color: #d38a45;
+}
+
+.who-we-are a:hover {
+  color: white;
+}
+
+.recipes {
+  height: 500px;
 }
 
 .testimonials {
@@ -162,7 +208,7 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
 }
 
 .contact-section .contact {
-  background-image: url('img/contact-background2.jpg');
+  background-image: url('img/contact-background2.jpeg');
   background-size: cover;
   background-position: center;
 }
@@ -304,14 +350,59 @@ nav img {
     padding-right: 2rem;
   }
 
+  .mb-4, .my-4 {
+    margin-bottom: 0 !important;
+  }
+}
+
+.p-5 {
+  padding: 0!important;
+}
+
+@media (min-width: 1400px) {
   .navbar {
     padding-left: 13%;
     padding-right: 13%;
+  }
+  .jarallax {
+    height: 50vh;
+    min-height: 50vh;
+  }
+
+  .main-jarralax {
+    padding: 0;
   }
 
   .jarallax .cta {
     margin-left: 13%;
   }
+
+  .about-us {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
+
+  .who-we-are {
+    margin-top: 3%;
+  }
+}
+
+@media (max-width: 1160px) and (min-width: 993px){
+ .about-us .img-fluid {
+   margin-top: 5%;
+ }
+}
+
+@media (max-width: 1399px) {
+  .jarallax {
+    height: 40vh;
+    min-height: 40vh;
+  }
+
+  .main-jarralax {
+    padding: 2%!important;
+  }
+ }
 }
 
 @media (max-width: 992px) {
