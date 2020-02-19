@@ -806,6 +806,11 @@ nav img {
     padding-right: 2rem;
   }
 
+  .jarallax {
+    height: 55vh;
+    min-height: 55vh;
+  }
+
   .mb-4, .my-4:not(.contact-info) {
     margin-bottom: 0 !important;
   }
@@ -819,19 +824,6 @@ nav img {
   }
 }
 
-@media (min-width: 1100px) {
-  .jarallax {
-    height: 55vh;
-    min-height: 55vh;
-  }
-}
-
-@media (max-width: 1099px) {
-  .jarallax {
-    height: 40vh;
-    min-height: 40vh;
-  }
-}
 
 @media (max-width: 992px) {
   .navbar {
@@ -873,8 +865,8 @@ nav img {
   }
 
   .jarallax {
-    height: 45vh;
-    min-height: 45vh;
+    height: 55vh;
+    min-height: 55vh;
   }
 
   .carousel-control-prev {
