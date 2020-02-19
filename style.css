@@ -758,6 +758,10 @@ nav img {
     padding-right: 5%;
   }
 
+  .md-form .form-control {
+    margin: 0 !important;
+  }
+
   .footer {
     padding-left: 6%;
     padding-right: 7%;
@@ -864,7 +868,7 @@ nav img {
     top: -8px;
   }
 
-  .jarallax {
+   .jarallax {
     height: 55vh;
     min-height: 55vh;
   }
