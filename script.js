@@ -1,6 +1,6 @@
 wW = $(window).width();
 
-$(".nav-link, .main a").on('click', function(event) {
+$(".contact-link, .main a").on('click', function(event) {
   event.preventDefault();
   var full_url = this.href;
   var parts = full_url.split("#");
@@ -11,6 +11,15 @@ $(".nav-link, .main a").on('click', function(event) {
     scrollTop: target_top
   }, 1000);
   event.preventDefault();
+});
+
+$(".contact-link, .dropdown-menu a").on('click', function () {
+  if ($('.animated-icon2').hasClass('open')) {
+    $('.animated-icon2').removeClass('open');
+    $('.navbar-collapse').removeClass('show');
+    $('.nav-item .dropdown').removeClass('show');
+    $('.dropdown-menu').removeClass('show');
+  }
 });
 
 var setColor = function() {
@@ -53,6 +62,7 @@ $('.second-button').on('click', function() {
     $('.animated-icon2 span').attr('style', 'background-color: black;');
   }
 });
+
 
 var setNav = function() {
 

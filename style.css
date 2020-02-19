@@ -5,25 +5,79 @@ body {
   /* font-family: sans-serif !important; */
 }
 
-/* a, a:active, a:hover, a:focus {
-  color: inherit!important;
-} */
+@media (min-width: 993px) {
+  h1 {
+    font-size: 6.5rem;
+  }
+
+  h2 {
+    font-size: 6rem;
+  }
+
+  h3 {
+    font-size: 4.5rem;
+  }
+
+  h4 {
+    font-size: 1.5rem;
+  }
+
+  .testimonials h4 {
+    font-size: 1.9rem;
+  }
+
+  .testimonial-text p {
+    font-size: 25px;
+  }
+
+  .testimonials .fas {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 4.6rem;
+  }
+
+  h2 {
+    font-size: 4.3rem;
+  }
+
+  h3 {
+    font-size: 2.8rem;
+  }
+
+  h4 {
+    font-size: 1.3rem;
+  }
+
+  .testimonials h4 {
+    font-size: 1.3rem;
+  }
+
+
+  .testimonial-text {
+    text-align: center;
+  }
+
+  .testimonial-text p {
+    font-size: 16px;
+  }
+
+  .testimonials .fas {
+    font-size: 10px;
+  }
+}
+
+
 h1, h2, h3 {
   font-family: 'Playball', cursive;
   color: #b9702c;
 }
 
-h1 {
-  font-size: 6.5rem;
-}
-
-h2 {
-  font-size: 6rem;
-}
-
-h3 {
+.recipes h3 {
   color: white;
-  font-size: 4.5rem;
 }
 
 .anchor {
@@ -210,7 +264,6 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
 
 .testimonials h4 {
   font-family: 'Cabin', sans-serif;
-  font-size: 1.9rem;
 }
 
 .testimonial-text {
@@ -285,8 +338,8 @@ iframe {
 .footer {
   background-color: #100e09;
   margin-top: -50px;
-  color: white;
-  font-size: 15px;
+  color: rgba(255, 255, 255, .8);
+  font-size: 14px;
   display: flex;
   justify-content: space-between;
   padding-top: 37px;
@@ -597,7 +650,6 @@ nav img {
   .about-us .mr-md-5, .about-us .mx-md-5, .our-menu .mr-md-5, .our-menu .mx-md-5 {
     margin-right: 0 !important;
   } */
-
   .recipes .container-fluid {
     padding-left: 6%;
     padding-right: 6%;
@@ -651,9 +703,11 @@ nav img {
     padding-right: 3%;
   }
 
-  /* .about-us .mb-5, .about-us .my-5 {
+  .about-us .mb-5, .about-us .my-5 {
     margin-bottom: 0 !important;
   }
+
+  /*
 
   .about-us .ml-md-5, .about-us .mx-md-5, .our-menu .ml-md-5, .our-menu .mx-md-5 {
     margin-left: 0 !important;
@@ -662,7 +716,6 @@ nav img {
   .about-us .mr-md-5, .about-us .mx-md-5, .our-menu .mr-md-5, .our-menu .mx-md-5 {
     margin-right: 0 !important;
   } */
-
   .recipes .container-fluid {
     padding-left: 6%;
     padding-right: 6%;
@@ -685,9 +738,6 @@ nav img {
     margin-bottom: 60px !important;
   }
 
-  .testimonials .jarallax {
-  }
-
   .testimonials .row {
     margin-top: 12%;
     margin-bottom: 12%;
@@ -695,9 +745,13 @@ nav img {
     padding-right: 3%;
   }
 
-.carousel-control-next, .carousel-control-prev, .carousel-indicators {
-  visibility: hidden;
-}
+  .testimonials .mb-4 {
+    margin-bottom: 10px !important;
+  }
+
+  .carousel-control-next, .carousel-control-prev, .carousel-indicators {
+    visibility: hidden;
+  }
 
   .contact-form {
     padding-left: 5%;
@@ -726,12 +780,10 @@ nav img {
 
 .testimonial-text p {
   align-self: center;
-  font-size: 25px;
   font-style: italic;
 }
 
 .testimonials .fas {
-  font-size: 19px;
   margin: 0 8px;
 }
 
@@ -790,6 +842,7 @@ nav img {
     margin-left: 20px;
     /* display: inline-block; */
     color: black;
+    width: 150px;
   }
 
   .first {
