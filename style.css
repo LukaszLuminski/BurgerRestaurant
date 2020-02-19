@@ -1,13 +1,13 @@
 body {
   color: white;
   background-color: #f2e3d9;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Cabin', sans-serif;
   /* font-family: sans-serif !important; */
 }
 
-a, a:active, a:hover, a:focus {
+/* a, a:active, a:hover, a:focus {
   color: inherit!important;
-}
+} */
 
 h1, h2, h3 {
   font-family: 'Playball', cursive;
@@ -37,7 +37,7 @@ h3 {
 .yummy:after {
   content: '';
   position: absolute;
-  width: 180px;
+  width: 130px;
   height: 1px;
   background: white;
   bottom: 0;
@@ -79,11 +79,19 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
 
 .navbar .dropdown-menu a, .top-nav-collapse .dropdown-menu a {
   padding: 8px;
+  display: block!important;
 }
 
-.navbar .dropdown-menu a:not(.active) {
-  color: white;
+.navbar .dropdown-menu a:hover, .top-nav-collapse .dropdown-menu a:hover {
+  color: rgba(255, 255, 255, 0.75) !important;
 }
+
+.last .nav-link:hover {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+/* .navbar .dropdown-menu a:not(.active) {
+  color: white;
+} */
 
 .top-nav-collapse .dropdown-menu a:not(.active) {
   color: black;
@@ -135,18 +143,18 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
     border-color:white !important;
 }
 
-.who-we-are {
+.grid-text {
   color: black !important;
   max-width: 600px;
 }
 
-.who-we-are-h {
+.grid-text-h {
   margin-bottom: 40px;
   position: relative;
   margin-top: -22px;
 }
 
-.who-we-are-h:after {
+.grid-text-h:after {
   content: '';
   position: absolute;
   background: rgba(0,0,0,.9);;
@@ -159,16 +167,16 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
   margin: auto;
 }
 
-.who-we-are p {
+.grid-text p {
   /* margin-top: 12px; */
   margin-bottom: 12px;
 }
 
-.who-we-are a {
+.grid-text a {
   color: #d38a45;
 }
 
-.who-we-are a:hover {
+.grid-text a:hover {
   color: white;
 }
 
@@ -178,10 +186,20 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
 
 .testimonials {
   color: #fff;
-  text-align: center;
+  /* text-align: center; */
   background-size: cover;
   background-position: center;
   background-image: url('img/place-background.jpg');
+}
+
+
+.testimonials h3 {
+  color: white;
+}
+
+.testimonials h4 {
+  font-family: 'Cabin', sans-serif;
+  font-size: 1.9rem;
 }
 
 .testimonial-text {
@@ -190,8 +208,10 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
   text-align: left;
 }
 
-.carousel-inner {
-  height: 50vh;
+.testimonials .view .jarallax {
+  display: table-cell;
+  /* height: 50vh; */
+  vertical-align: middle;
 }
 
 .contact-form {
@@ -232,11 +252,6 @@ iframe {
   height: 70px;
 }
 
-/* .about-us, .menu, .contact {
-  background-image: url('img/divs-background.jpg');
-  background-size: cover;
-  background-position: center;
-} */
 .navbar .nav-link {
   margin-left: 0 !important;
 }
@@ -245,7 +260,6 @@ nav img {
   height: 80px;
 }
 
-/* Icon 1 */
 .animated-icon2 {
   width: 30px;
   height: 20px;
@@ -382,14 +396,52 @@ nav img {
     padding-right: 8%;
   }
 
-  .who-we-are {
+  .our-menu {
+    padding-left: 6.5%;
+    padding-right: 9.5%;
+  }
+
+  .grid-text {
     margin-top: 3%;
+  }
+
+  .testimonials {
+    padding-left: 11%;
+    padding-right: 14%;
   }
 }
 
+.testimonials .col-lg-6 {
+max-width: 100%;
+}
+
+.testimonial-text {
+display: flex;
+position: relative;
+}
+
+.testimonial-text p {
+align-self: center;
+font-size: 25px;
+font-style: italic;
+}
+
+.testimonials .fas {
+font-size: 19px;
+margin: 0 8px;
+}
+
+.testimonials .fa-quote-right {
+padding-top: -10px;
+}
+
 @media (max-width: 1160px) and (min-width: 993px){
- .about-us .img-fluid {
+ .grid .img-fluid {
    margin-top: 5%;
+ }
+
+ .menu-pics {
+   margin-top: 3%;
  }
 }
 
@@ -403,7 +455,6 @@ nav img {
     padding: 2%!important;
   }
  }
-}
 
 @media (max-width: 992px) {
   .navbar {
@@ -412,12 +463,10 @@ nav img {
 
   .navbar .nav-item .nav-link {
     margin-left: 20px;
-    display: inline-block;
+    /* display: inline-block; */
+    color: black;
   }
 
-  /* .dropright a:hover {
-    color: white!important;
-  } */
   .first {
     margin-top: 22px !important;
   }
