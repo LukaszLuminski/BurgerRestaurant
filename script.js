@@ -47,6 +47,15 @@ var stopAnimation = function() {
   });
 };
 
+var swapPics = function () {
+  if (wW <= 767) {
+      $('.swap-pics').attr('src', 'img/burger-background2.jpg');
+  } else {
+    $('.swap-pics').attr('src', 'img/burger-background.jpeg');
+  }
+};
+
+swapPics();
 
 $('.second-button').on('click', function() {
   $('.animated-icon2').toggleClass('open');
@@ -85,21 +94,9 @@ var setNav = function() {
   }
 };
 
-// var highlightColor = function () {
-//   if ($('#navbarSupportedContent').hasClass('dropright')) {
-//   $(".navbar").on("mouseover", function() {
-//     $(this).attr('style', 'color: grey');
-//   });
-//   $(".navbar").on("mouseleave", function() {
-//     $(this).attr('style', 'color: black');
-//   });
-// }
-// };
-//
-//  highlightColor();
-
 $(window).on('scroll', setNav);
 $(window).on('resize', function() {
+  swapPics();
   stopAnimation();
   setNav();
   $('.animated-icon2').removeClass('open');

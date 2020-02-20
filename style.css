@@ -194,7 +194,6 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
 .jarallax .cta {
   padding-bottom: 10%;
   z-index: 10;
-  margin-top: 160px !important;
   max-width: 1000px;
 }
 
@@ -621,10 +620,14 @@ nav img {
   @media (min-width:768px) {
     .jarallax .cta {
       margin-left: 7%;
+      margin-top: 160px !important;
     }
   }
 
   @media (max-width:767px) {
+    .jarallax .cta {
+      margin-top: 0 !important;
+    }
     .about-us .mb-5, .about-us .my-5 {
       margin-bottom: 0 !important;
     }
@@ -893,23 +896,5 @@ nav img {
 
   .carousel-control-next {
     left: 81%;
-  }
-}
-
-@media (min-width: 768px) {
-  .jarallax-img {
-    width: 100vh;
-    background-image: url('img/burger-background.jpeg');
-    background-size: cover;
-    background-position: center;
-  }
-}
-
-@media (max-width: 767px) {
-  .jarallax-img {
-    width: 100vh;
-    background-image: url('img/burger-background2.jpg');
-    background-size: cover;
-    background-position: center;
   }
 }
