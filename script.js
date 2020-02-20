@@ -1,5 +1,8 @@
 wW = $(window).width();
 
+
+//<!--Smooth scroll to href-->
+
 $(".contact-link, .main a").on('click', function(event) {
   event.preventDefault();
   var full_url = this.href;
@@ -13,6 +16,10 @@ $(".contact-link, .main a").on('click', function(event) {
   event.preventDefault();
 });
 
+
+
+//<!--Dropdown menu button behaviour-->
+
 $(".contact-link, .dropdown-menu a").on('click', function () {
   if ($('.animated-icon2').hasClass('open')) {
     $('.animated-icon2').removeClass('open');
@@ -22,11 +29,19 @@ $(".contact-link, .dropdown-menu a").on('click', function () {
   }
 });
 
+
+
+//<!--Disable parralax on smaller screen-->
+
 jarallax(document.querySelectorAll('.jarallax'), {
   disableParallax: function () {
     return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
   }
 });
+
+
+
+//<!--Set proper navbar color and navbar background color on load & reload-->
 
 var setColor = function() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -41,6 +56,10 @@ var setColor = function() {
 
 setColor();
 
+
+
+//<!--Stop all animations on window resize -->
+
 var stopAnimation = function() {
 
   let resizeTimer;
@@ -52,6 +71,10 @@ var stopAnimation = function() {
     }, 400);
   });
 };
+
+
+
+//<!--Hamburger menu button behaviour-->
 
 $('.second-button').on('click', function() {
   $('.animated-icon2').toggleClass('open');
@@ -68,6 +91,9 @@ $('.second-button').on('click', function() {
   }
 });
 
+
+
+//<!--Set navbar color and navbar background color on resize-->
 
 var setNav = function() {
 
@@ -90,9 +116,29 @@ var setNav = function() {
   }
 };
 
+
+
+//<!--Set dropdown or dropright menu depending on width-->
+
+var setDropdownMenu = function () {
+  wW = $(window).width();
+  if (wW >= 993) {
+    $("#navbarSupportedContent").removeClass('dropright');
+  } else {
+    $("#navbarSupportedContent").addClass('dropright');
+  }
+};
+
+setDropdownMenu();
+
+
+
+//<!--Activate behaviours on scroll and resize-->
+
 $(window).on('scroll', setNav);
 $(window).on('resize', function() {
   stopAnimation();
+  setDropdownMenu();
   setNav();
   $('.animated-icon2').removeClass('open');
   $('.navbar-collapse').removeClass('show');
@@ -100,6 +146,9 @@ $(window).on('resize', function() {
   $('.dropdown-menu').removeClass('show');
 });
 
+
+
+//<!--Reload window on clicking logo-->
 
 $('.logo').click(function() {
   location.reload();
@@ -110,38 +159,37 @@ $('.logo').click(function() {
 
 });
 
+
+
+//<!--Activate lightbox gallery behaviour-->
+
 $(function() {
   $("#mdb-lightbox-ui").load("mdb/mdb-addons/mdb-lightbox-ui.html");
 });
 
+
+
+//<!--Set current date in footer-->
+
 $(".copyright").text(new Date().getFullYear());
+
+
+
+//<!--Change googlemap height accordingly on load-->
 
 var setMap = function () {
   if (wW >= 993) {
     $('.map').attr('height', 450);
   } else {
-    $('.map').attr('height', 350);
+    $('.map').attr('height', 320);
   }
 };
 
 setMap();
 
 
-$(document).ready(function() {
-  if (wW <= 992) {
-    $("#navbarSupportedContent").addClass('dropright');
-    // highlightColor();
-  }
 
-  $(window).resize(function() {
-    wW = $(window).width();
-    if (wW >= 993) {
-      $("#navbarSupportedContent").removeClass('dropright');
-    } else {
-      $("#navbarSupportedContent").addClass('dropright');
-    }
-  });
-});
+//<!--Scroll to top from footer-->
 
 $(".return-to-top").on('click', function() {
   $('html, body').animate({
