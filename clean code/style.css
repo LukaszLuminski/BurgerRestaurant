@@ -105,11 +105,6 @@ h1, h2, h3 {
   margin-top: -60px;
 }
 
-.main .jarallax {
-height: 100vh;
-min-height: 352px;
-}
-
 .yummy {
   margin-top: -15px;
   margin-bottom: 37px;
@@ -193,7 +188,8 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
 .main {
   display: table-cell;
   width: 100vw;
-  height: 100vh !important;
+  height: 100vh;
+  min-height: 582px;
   vertical-align: middle;
 }
 
@@ -524,7 +520,7 @@ nav img {
   }
 
   .jarallax .cta {
-    margin-left: 14%;
+    margin-left: 15%;
   }
 
   .about-us {
@@ -656,33 +652,15 @@ nav img {
     padding-right: 6%;
   }
 
-  .jarallax {
+ .recipes .jarallax, .testimonials .jarallax {
    height: 45vh;
-   min-height: 352px;
+   min-height: 352vh;
  }
 
   @media (min-width:768px) {
     .jarallax .cta {
       margin-left: 7%;
       margin-top: 160px !important;
-    }
-
-    .about-us .ml-md-5, .about-us .mx-md-5, .our-menu .ml-md-5, .our-menu .mx-md-5 {
-      margin-left: 0 !important;
-    }
-
-    .about-us .mr-md-5, .about-us .mx-md-5, .our-menu .mr-md-5, .our-menu .mx-md-5 {
-      margin-right: 0 !important;
-    }
-
-    .about-us {
-      padding-left: 2%;
-      padding-right: 2%;
-    }
-
-    .our-menu {
-      padding-left: 0;
-      padding-right: 1%;
     }
   }
 
@@ -693,27 +671,46 @@ nav img {
     .about-us .mb-5, .about-us .my-5 {
       margin-bottom: 0 !important;
     }
+
+    .about-us .ml-md-5, .about-us .mx-md-5, .our-menu .ml-md-5, .our-menu .mx-md-5 {
+      margin-left: 0 !important;
+    }
+
+    .about-us .mr-md-5, .about-us .mx-md-5, .our-menu .mr-md-5, .our-menu .mx-md-5 {
+      margin-right: 0 !important;
+    }
   }
 
   @media (max-width:767px) and (min-width:500px) {
     .jarallax .col-md-6 {
       padding: 0 10%;
     }
-
-    .about-us {
-      padding-left: 7%;
-      padding-right: 7%;
-    }
-
-    .our-menu {
-      padding-left: 6%;
-      padding-right: 6%;
-    }
   }
 
+  .about-us {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  /* .about-us .mb-5, .about-us .my-5 {
+    margin-bottom: 0 !important;
+  }
+
+  .about-us .ml-md-5, .about-us .mx-md-5, .our-menu .ml-md-5, .our-menu .mx-md-5 {
+    margin-left: 0 !important;
+  }
+
+  .about-us .mr-md-5, .about-us .mx-md-5, .our-menu .mr-md-5, .our-menu .mx-md-5 {
+    margin-right: 0 !important;
+  } */
   .recipes .container-fluid {
     padding-left: 6%;
     padding-right: 6%;
+  }
+
+  .our-menu {
+    padding-left: 0;
+    padding-right: 1%;
   }
 
   .our-menu .mb-5, .our-menu .my-5 {
@@ -750,9 +747,9 @@ nav img {
     padding-right: 2%;
   }
 
-  .jarallax {
+ .recipes .jarallax, .testimonials .jarallax {
    height: 55vh;
-   min-height: 352px;
+   min-height: 352vh;
  }
 
   .jarallax .col-md-6 {
@@ -768,14 +765,23 @@ nav img {
     margin-bottom: 0 !important;
   }
 
+  /*
+
+  .about-us .ml-md-5, .about-us .mx-md-5, .our-menu .ml-md-5, .our-menu .mx-md-5 {
+    margin-left: 0 !important;
+  }
+
+  .about-us .mr-md-5, .about-us .mx-md-5, .our-menu .mr-md-5, .our-menu .mx-md-5 {
+    margin-right: 0 !important;
+  } */
   .recipes .container-fluid {
     padding-left: 6%;
     padding-right: 6%;
   }
 
   .our-menu {
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
 
   .our-menu .mb-5, .our-menu .my-5 {
@@ -866,7 +872,7 @@ nav img {
     padding-right: 2rem;
   }
 
-  .jarallax {
+  .recipes .jarallax, .testimonials .jarallax {
     height: 55vh;
     min-height: 55vh;
   }
@@ -940,5 +946,11 @@ nav img {
 @media (max-width: 321px) {
   .main .col-md-6 {
     padding-top: 40px;
+  }
+}
+
+@media (max-height: 567px) {
+  .main .col-md-6 {
+    padding-top: 90px;
   }
 }
