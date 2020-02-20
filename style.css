@@ -389,9 +389,9 @@ padding: 2% !important;
   margin-bottom: 12px;
 }
 
-.grid-text {
+/* .grid-text {
   margin-top: 3%;
-}
+} */
 
 .grid-text a {
   color: #d38a45;
@@ -701,6 +701,10 @@ iframe {
       margin-left: 0 !important;
     }
 
+    .about-us .grid-text {
+      margin-bottom: -20px !important;
+    }
+
     .about-us .mr-md-5, .about-us .mx-md-5, .our-menu .mr-md-5, .our-menu .mx-md-5 {
       margin-right: 0 !important;
     }
@@ -855,9 +859,9 @@ iframe {
     margin-top: 5%;
   }
 
-  .menu-pics {
+  /* .menu-pics {
     margin-top: 3%;
-  }
+  } */
 }
 
 @media (min-width: 993px) {
