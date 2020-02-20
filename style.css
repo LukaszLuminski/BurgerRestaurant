@@ -161,9 +161,6 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
-/* .navbar .dropdown-menu a:not(.active) {
-  color: white;
-} */
 .top-nav-collapse .dropdown-menu a:not(.active) {
   color: black;
 }
@@ -206,6 +203,42 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
 
 .btn-outline-warning:not([disabled]):not(.disabled):active, .btn-outline-warning:not([disabled]):not(.disabled).active, .show>.btn-outline-warning.dropdown-toggle {
   border-color: #d38a45 !important;
+}
+
+@media (min-width: 768px) {
+
+.main h1 {
+  color: #b9702c;
+}
+
+  .main .btn-outline-warning, .main .btn-outline-warning:focus, .main .btn-outline-warning:active, .main .btn-outline-warning:active:focus, .main .btn-outline-warning.active {
+    color: #d38a45 !important;
+    background-color: transparent;
+    border-color: #d38a45 !important;
+    width: 170px !important;
+  }
+
+  .main .btn-outline-warning:not([disabled]):not(.disabled):active, .main .btn-outline-warning:not([disabled]):not(.disabled).active, .show>.main .btn-outline-warning.dropdown-toggle {
+    border-color: #d38a45 !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .main .btn-outline-warning, .main .btn-outline-warning:focus, .main .btn-outline-warning:active, .main .btn-outline-warning:active:focus, .main .btn-outline-warning.active {
+    color: #e2b183 !important;
+    background-color: transparent;
+    border-color: #e2b183 !important;
+    width: 170px !important;
+  }
+
+  .main .btn-outline-warning:not([disabled]):not(.disabled):active, .main .btn-outline-warning:not([disabled]):not(.disabled).active, .show>.main .btn-outline-warning.dropdown-toggle {
+    border-color: #e2b183 !important;
+  }
+
+  .main h1 {
+    color: #e2b183;
+  }
+
 }
 
 .btn-outline-warning:hover {
@@ -607,7 +640,7 @@ nav img {
   }
 }
 
-@media (max-width: 993px) and (min-width: 500px) {
+@media (max-width: 992px) and (min-width: 500px) {
 
   /* .main-jarralax {
     padding: 2% !important;
@@ -616,6 +649,11 @@ nav img {
     padding-left: 6%;
     padding-right: 6%;
   }
+
+  .jarallax {
+   height: 45vh;
+   min-height: 45vh;
+ }
 
   @media (min-width:768px) {
     .jarallax .cta {
@@ -706,6 +744,11 @@ nav img {
     padding-left: 3%;
     padding-right: 2%;
   }
+
+  .jarallax {
+   height: 55vh;
+   min-height: 55vh;
+ }
 
   .jarallax .col-md-6 {
     padding: 0 10%;
@@ -883,11 +926,6 @@ nav img {
   .dropright .second-dropdown {
     left: 120px;
     top: -8px;
-  }
-
-   .jarallax {
-    height: 55vh;
-    min-height: 55vh;
   }
 
   .carousel-control-prev {
