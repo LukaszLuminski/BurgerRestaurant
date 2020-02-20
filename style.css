@@ -831,6 +831,10 @@ iframe {
     padding-right: 2%;
   }
 
+  .testimonials {
+    background-image: url('img/place-background2.jpg');
+  }
+
   .testimonials .mb-4 {
     margin-bottom: 10px !important;
   }
