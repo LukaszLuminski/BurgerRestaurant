@@ -22,6 +22,12 @@ $(".contact-link, .dropdown-menu a").on('click', function () {
   }
 });
 
+jarallax(document.querySelectorAll('.jarallax'), {
+  disableParallax: function () {
+    return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
+  }
+});
+
 var setColor = function() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     ($('.navbar').addClass('top-nav-collapse'));
