@@ -91,11 +91,19 @@ h1, h2, h3 {
   color: white;
 }
 
-.anchor {
+.anchor, .anchor2 {
   display: block;
   visibility: hidden;
+}
+
+.anchor {
   height: 45px;
   margin-top: -45px;
+}
+
+.anchor2 {
+  height: 60px;
+  margin-top: -60px;
 }
 
 .yummy {
@@ -121,10 +129,6 @@ h1, h2, h3 {
 .resize-animation-stopper * {
   animation: none !important;
   transition: none !important;
-}
-
-.another-div {
-  height: 100vh;
 }
 
 .vertical-center {
@@ -194,14 +198,14 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
   max-width: 1000px;
 }
 
-.btn-outline-warning, .btn-outline-warning:focus, .btn-outline-warning:active, .btn-outline-warning:active:focus, .btn-outline-warning.active {
+.btn-outline-orange, .btn-outline-orange:focus, .btn-outline-orange:active, .btn-outline-orange:active:focus, .btn-outline-orange.active, .btn-outline-orange.visited {
   color: #d38a45 !important;
   background-color: transparent;
   border-color: #d38a45 !important;
-  width: 170px !important;
+  width: 160px !important;
 }
 
-.btn-outline-warning:not([disabled]):not(.disabled):active, .btn-outline-warning:not([disabled]):not(.disabled).active, .show>.btn-outline-warning.dropdown-toggle {
+.btn-outline-orange:not([disabled]):not(.disabled):active, .btn-outline-orange:not([disabled]):not(.disabled).active, .show>.btn-outline-orange.dropdown-toggle {
   border-color: #d38a45 !important;
 }
 
@@ -211,27 +215,25 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
   color: #b9702c;
 }
 
-  .main .btn-outline-warning, .main .btn-outline-warning:focus, .main .btn-outline-warning:active, .main .btn-outline-warning:active:focus, .main .btn-outline-warning.active {
+  .main .btn-outline-orange, .main .btn-outline-orange:focus, .main .btn-outline-orange:active, .main .btn-outline-orange:active:focus, .main .btn-outline-orange.active .main .btn-outline-orange.visited {
     color: #d38a45 !important;
     background-color: transparent;
     border-color: #d38a45 !important;
-    width: 170px !important;
   }
 
-  .main .btn-outline-warning:not([disabled]):not(.disabled):active, .main .btn-outline-warning:not([disabled]):not(.disabled).active, .show>.main .btn-outline-warning.dropdown-toggle {
+  .main .btn-outline-orange:not([disabled]):not(.disabled):active, .main .btn-outline-orange:not([disabled]):not(.disabled).active, .show>.main .btn-outline-orange.dropdown-toggle {
     border-color: #d38a45 !important;
   }
 }
 
 @media (max-width: 767px) {
-  .main .btn-outline-warning, .main .btn-outline-warning:focus, .main .btn-outline-warning:active, .main .btn-outline-warning:active:focus, .main .btn-outline-warning.active {
+  .main .btn-outline-orange, .main .btn-outline-orange:focus, .main .btn-outline-orange:active, .main .btn-outline-orange:active:focus, .main .btn-outline-orange.active {
     color: #e2b183 !important;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, .6)!important;
     border-color: #e2b183 !important;
-    width: 170px !important;
   }
 
-  .main .btn-outline-warning:not([disabled]):not(.disabled):active, .main .btn-outline-warning:not([disabled]):not(.disabled).active, .show>.main .btn-outline-warning.dropdown-toggle {
+  .main .btn-outline-orange:not([disabled]):not(.disabled):active, .main .btn-outline-orange:not([disabled]):not(.disabled).active, .show>.main .btn-outline-orange.dropdown-toggle {
     border-color: #e2b183 !important;
   }
 
@@ -241,7 +243,7 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
 
 }
 
-.btn-outline-warning:hover {
+.btn-outline-orange:hover {
   color: white !important;
   border-color: white !important;
 }
@@ -652,7 +654,7 @@ nav img {
 
   .jarallax {
    height: 45vh;
-   min-height: 45vh;
+   min-height: 352px;
  }
 
   @media (min-width:768px) {
@@ -747,7 +749,7 @@ nav img {
 
   .jarallax {
    height: 55vh;
-   min-height: 55vh;
+   min-height: 352px;
  }
 
   .jarallax .col-md-6 {
@@ -934,5 +936,15 @@ nav img {
 
   .carousel-control-next {
     left: 81%;
+  }
+
+  .contact .col-md-12 {
+    margin-bottom: -35px !important;
+  }
+}
+
+@media (max-width: 321px) {
+  .main .col-md-6 {
+    padding-top: 70px;
   }
 }
