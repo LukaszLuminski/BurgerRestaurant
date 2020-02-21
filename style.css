@@ -635,7 +635,7 @@ iframe {
 
   .jarallax {
     height: 40vh;
-    min-height: 546px;
+    min-height: 450px;
   }
 
   .jarallax .cta {
@@ -689,7 +689,7 @@ iframe {
 
   .jarallax {
    height: 40vh;
-   min-height: 409px;
+   min-height: 352px;
  }
 
   @media (min-width:768px) {
@@ -943,5 +943,11 @@ iframe {
 @media (max-width: 321px) {
   .main .col-md-6 {
     padding-top: 40px;
+  }
+}
+
+@media (max-height: 568px) {
+  .main .col-md-6 {
+    padding-top: 60px;
   }
 }
