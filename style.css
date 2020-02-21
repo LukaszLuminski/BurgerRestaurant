@@ -267,11 +267,11 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
   transition: .5s;
 }
 
-.main .jarallax {
+/* .main .jarallax {
 height: 100vh;
 min-height: 352px;
 padding: 2% !important;
-}
+} */
 
 .yummy {
   margin-top: -15px;
@@ -297,6 +297,7 @@ padding: 2% !important;
   display: table-cell;
   width: 100vw;
   height: 100vh !important;
+  min-height: 352px !important;
   vertical-align: middle;
 }
 
@@ -552,7 +553,7 @@ iframe {
 
   .jarallax {
     height: 55vh;
-    min-height: 55vh;
+    min-height: 515px;
   }
 
   .jarallax .cta {
@@ -593,7 +594,7 @@ iframe {
 
   .jarallax {
     height: 55vh;
-    min-height: 55vh;
+    min-height: 515px;
   }
 
   .jarallax .cta {
@@ -634,7 +635,7 @@ iframe {
 
   .jarallax {
     height: 40vh;
-    min-height: 40vh;
+    min-height: 546px;
   }
 
   .jarallax .cta {
@@ -688,7 +689,7 @@ iframe {
 
   .jarallax {
    height: 40vh;
-   min-height: 352px;
+   min-height: 409px;
  }
 
   @media (min-width:768px) {
