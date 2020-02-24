@@ -541,7 +541,7 @@ iframe {
 }
 
 input:-webkit-autofill {
-   background-color: #f5e5d6;
+   background-color: #f5e5d6 !important;
 }
 
 .social-media {
