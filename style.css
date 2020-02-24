@@ -5,13 +5,17 @@ body {
   /* font-family: sans-serif !important; */
 }
 
+#mdb-preloader {
+  background-color: #0e1116;
+}
+
 #mdb-preloader.loaded {
   opacity: 0;
   transition: .3s ease-in 1s;
 }
 
 .preloader-wrapper .spinner-yellow-only {
-    border-color: #b9702c !important;
+    border-color: #b9702c;
   }
 
 h1, h2, h3 {
