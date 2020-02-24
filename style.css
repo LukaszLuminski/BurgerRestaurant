@@ -540,8 +540,8 @@ iframe {
   color: #d38a45;
 }
 
-input:-internal-autofill-selected {
-  background-color: #f5e5d6 !important;
+input:-webkit-autofill {
+   background-color: #f5e5d6;
 }
 
 .social-media {
