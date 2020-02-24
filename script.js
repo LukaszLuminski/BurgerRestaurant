@@ -1,8 +1,5 @@
 wW = $(window).width();
 
-$("input[type='text']").bind('focus', function() {
-   $(this).css('background-color', '#f5e5d6');
-});
 
 //<!--Preloader screen behaviour-->
 

@@ -540,10 +540,6 @@ iframe {
   color: #d38a45;
 }
 
-input:-webkit-autofill {
-   background-color: #f5e5d6 !important;
-}
-
 .social-media {
   margin-top: 25px;
 }
