@@ -15,12 +15,7 @@ body {
 }
 
 .preloader-wrapper .spinner-yellow-only {
-    border-color: #b9702c;
-  }
-
-h1, h2, h3 {
-  font-family: 'Playball', cursive;
-  color: #b9702c;
+  border-color: #b9702c;
 }
 
 a:hover {
@@ -30,6 +25,11 @@ a:hover {
 .resize-animation-stopper * {
   animation: none !important;
   transition: none !important;
+}
+
+h1, h2, h3 {
+  font-family: 'Playball', cursive;
+  color: #b9702c;
 }
 
 @media (min-width: 993px) {
@@ -289,7 +289,6 @@ height: 100vh;
 min-height: 352px;
 padding: 2% !important;
 } */
-
 .yummy {
   margin-top: -15px;
   margin-bottom: 37px;
@@ -340,10 +339,9 @@ padding: 2% !important;
 }
 
 @media (min-width: 768px) {
-
-.main h1 {
-  color: #b9702c;
-}
+  .main h1 {
+    color: #b9702c;
+  }
 
   .main .btn-outline-orange, .main .btn-outline-orange:focus, .main .btn-outline-orange:active, .main .btn-outline-orange:active:focus, .main .btn-outline-orange.active .main .btn-outline-orange.visited {
     color: #d38a45 !important;
@@ -359,7 +357,7 @@ padding: 2% !important;
 @media (max-width: 767px) {
   .main .btn-outline-orange, .main .btn-outline-orange:focus, .main .btn-outline-orange:active, .main .btn-outline-orange:active:focus, .main .btn-outline-orange.active {
     color: #e2b183 !important;
-    background-color: rgba(0, 0, 0, .6)!important;
+    background-color: rgba(0, 0, 0, .6) !important;
     border-color: #e2b183 !important;
   }
 
@@ -410,7 +408,6 @@ padding: 2% !important;
 /* .grid-text {
   margin-top: 3%;
 } */
-
 .grid-text a {
   color: #d38a45;
 }
@@ -532,6 +529,19 @@ iframe {
   background-image: url('img/contact-background2.jpeg');
   background-size: cover;
   background-position: center;
+}
+
+.md-form input[type="text"]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #d38a45;
+  box-shadow: 0 1px 0 0 #d38a45;
+}
+
+.md-form input[type="text"]:not(.browser-default):focus:not([readonly])+label {
+  color: #d38a45;
+}
+
+input:-internal-autofill-selected {
+  background-color: #f5e5d6 !important;
 }
 
 .social-media {
@@ -705,9 +715,9 @@ iframe {
   }
 
   .jarallax {
-   height: 40vh;
-   min-height: 352px;
- }
+    height: 40vh;
+    min-height: 352px;
+  }
 
   @media (min-width:768px) {
     .jarallax .cta {
@@ -742,6 +752,7 @@ iframe {
     .jarallax .cta {
       margin-top: 0 !important;
     }
+
     .about-us .mb-5, .about-us .my-5 {
       margin-bottom: 0 !important;
     }
@@ -803,9 +814,9 @@ iframe {
   }
 
   .jarallax {
-   height: 45vh;
-   min-height: 352px;
- }
+    height: 45vh;
+    min-height: 352px;
+  }
 
   .jarallax .col-md-6 {
     padding: 0 7%;
@@ -903,7 +914,6 @@ iframe {
     left: 85%;
   }
 }
-
 
 @media (max-width: 992px) {
   .navbar {
