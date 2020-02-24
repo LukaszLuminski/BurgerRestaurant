@@ -1,5 +1,9 @@
 wW = $(window).width();
 
+$(window).on('load', function() {
+  $('#mdb-preloader').addClass('loaded');
+  $('#mdb-preloader').attr('style', 'visibility: hidden;');
+});
 
 //<!--Smooth scroll to href-->
 
