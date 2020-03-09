@@ -531,12 +531,12 @@ iframe {
   background-position: center;
 }
 
-.md-form input[type="text"]:not(.browser-default):focus:not([readonly]) {
+.md-form input[type="text"]:not(.browser-default):focus:not([readonly]), .md-form textarea.md-textarea:not(.browser-default):focus:not([readonly]) {
   border-bottom: 1px solid #d38a45;
   box-shadow: 0 1px 0 0 #d38a45;
 }
 
-.md-form input[type="text"]:not(.browser-default):focus:not([readonly])+label {
+.md-form input[type="text"]:not(.browser-default):focus:not([readonly])+label, .md-form textarea.md-textarea:not(.browser-default):focus:not([readonly])+label {
   color: #d38a45;
 }
 
