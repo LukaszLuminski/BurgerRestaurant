@@ -1,9 +1,11 @@
+/*jshint esversion: 6 */
+
 wW = $(window).width();
 
 
 //<!--Preloader screen behaviour-->
 
-$(".main").ready(function(){
+$(".main").ready(() => {
   $('#mdb-preloader').addClass('loaded');
   $('#mdb-preloader').attr('style', 'visibility: hidden;');
 });
@@ -12,11 +14,11 @@ $(".main").ready(function(){
 
 $(".contact-link, .main a").on('click', function(event) {
   event.preventDefault();
-  var full_url = this.href;
-  var parts = full_url.split("#");
-  var trgt = parts[1];
-  var target_offset = $("#" + trgt).offset();
-  var target_top = target_offset.top;
+  const full_url = this.href;
+  const parts = full_url.split("#");
+  const trgt = parts[1];
+  const target_offset = $(`#${trgt}`).offset();
+  const target_top = target_offset.top;
   $('html, body').animate({
     scrollTop: target_top
   }, 1000);
@@ -27,7 +29,7 @@ $(".contact-link, .main a").on('click', function(event) {
 
 //<!--Dropdown menu button behaviour-->
 
-$(".contact-link, .dropdown-menu a").on('click', function () {
+$(".contact-link, .dropdown-menu a").on('click', () => {
   if ($('.animated-icon2').hasClass('open')) {
     $('.animated-icon2').removeClass('open');
     $('.navbar-collapse').removeClass('show');
@@ -41,7 +43,7 @@ $(".contact-link, .dropdown-menu a").on('click', function () {
 //<!--Disable parralax on smaller screen-->
 
 jarallax(document.querySelectorAll('.jarallax'), {
-  disableParallax: function () {
+  disableParallax() {
     return /iPad|iPhone|iPod|Android/.test(navigator.userAgent);
   }
 });
@@ -50,7 +52,7 @@ jarallax(document.querySelectorAll('.jarallax'), {
 
 //<!--Set proper navbar color and navbar background color on load & reload-->
 
-var setColor = function() {
+const setColor = () => {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     ($('.navbar').addClass('top-nav-collapse'));
     $('.navbar').attr('style', 'background: #f3e5d8; box-shadow: 1px 4px 15px 5px rgba(0, 0, 0, 0.35);');
@@ -67,7 +69,7 @@ setColor();
 
 //<!--Stop all animations on window resize -->
 
-var stopAnimation = function() {
+const stopAnimation = () => {
 
   let resizeTimer;
   window.addEventListener("resize", () => {
@@ -83,7 +85,7 @@ var stopAnimation = function() {
 
 //<!--Hamburger menu button behaviour-->
 
-$('.second-button').on('click', function() {
+$('.second-button').on('click', () => {
   $('.animated-icon2').toggleClass('open');
   if ($('.animated-icon2').hasClass('open')) {
     $('.navbar').attr('style', 'background: #f3e5d8; box-shadow: 1px 4px 15px 5px rgba(0, 0, 0, 0.35);');
@@ -102,7 +104,7 @@ $('.second-button').on('click', function() {
 
 //<!--Set navbar color and navbar background color on resize-->
 
-var setNav = function() {
+const setNav = () => {
 
   if (wW <= 992) {
     if ($('.navbar').hasClass('top-nav-collapse')) {
@@ -127,7 +129,7 @@ var setNav = function() {
 
 //<!--Set dropdown or dropright menu depending on width-->
 
-var setDropdownMenu = function () {
+const setDropdownMenu = () => {
   wW = $(window).width();
   if (wW >= 993) {
     $("#navbarSupportedContent").removeClass('dropright');
@@ -143,7 +145,7 @@ setDropdownMenu();
 //<!--Activate behaviours on scroll and resize-->
 
 $(window).on('scroll', setNav);
-$(window).on('resize', function() {
+$(window).on('resize', () => {
   stopAnimation();
   setDropdownMenu();
   setNav();
@@ -157,7 +159,7 @@ $(window).on('resize', function() {
 
 //<!--Reload window on clicking logo-->
 
-$('.logo').click(function() {
+$('.logo').click(() => {
   location.reload();
   if (wW <= 992 && $('.animated-icon2').hasClass('open')) {
     $('.animated-icon2').toggleClass('open');
@@ -170,7 +172,7 @@ $('.logo').click(function() {
 
 //<!--Activate lightbox gallery behaviour-->
 
-$(function() {
+$(() => {
   $("#mdb-lightbox-ui").load("mdb/mdb-addons/mdb-lightbox-ui.html");
 });
 
@@ -184,7 +186,7 @@ $(".copyright").text(new Date().getFullYear());
 
 //<!--Change googlemap height accordingly on load-->
 
-var setMap = function () {
+const setMap = () => {
   if (wW >= 993) {
     $('.map').attr('height', 450);
   } else {
@@ -198,7 +200,7 @@ setMap();
 
 //<!--Scroll to top from footer-->
 
-$(".return-to-top").on('click', function() {
+$(".return-to-top").on('click', () => {
   $('html, body').animate({
     scrollTop: $("body").offset().top
   }, 1600);
