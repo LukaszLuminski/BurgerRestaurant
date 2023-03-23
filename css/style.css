@@ -296,7 +296,7 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
   height: 1px;
   background: white;
   bottom: 0;
-  top: 65px;
+  top: 48px;
   left: 0;
   right: 0;
   margin: auto;
@@ -387,7 +387,7 @@ a:not([href]):not([tabindex]):hover, .nav-link:hover {
   width: 100px;
   height: 1px;
   bottom: 0;
-  top: 68px;
+  top: 50px;
   left: 0;
   right: 0;
   margin: auto;
